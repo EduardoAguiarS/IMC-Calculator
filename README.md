@@ -2,3 +2,4 @@
 <h3> Check the git pages to access the calculator </h3>
 https://eduardoaguiars.github.io/IMC-Calculator/
 
+![Screenshot from 2021-03-15 21-31-39](https://user-images.githubusercontent.com/78566280/111239839-c9342500-85d8-11eb-892a-32f35dfc373d.png)
