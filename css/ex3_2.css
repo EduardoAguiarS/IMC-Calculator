@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, rgb(10, 25, 110), rgb(44, 172, 223));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    margin-left: 2rem;
+}
+
+main.container{
+    background: white;
+    max-width: 400px;
+    min-height: 80vh;
+    max-height: 98vh;
+    padding: 4rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+ }
+
+ main h1 {
+    font-weight: 600;
+    margin-bottom: 1.3rem;
+    position: relative;
+    text-align: center;
+}
+
+main h1::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    bottom: 1px;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(45deg, rgb(10, 25, 110), rgb(44, 172, 223));
+}
+
+.input-field {
+    position: relative;
+}
+
+.input-field h4 {
+    text-align: center;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+
+.input-field input[type = "text"] {
+    outline: none;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 8px;
+    box-shadow:inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.radio {
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: capitalize;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 25px;
+    color: black;
+    display: inline-block;
+    position: relative;
+    padding-left: auto;
+    
+}
+
+.radio input {
+    display: none;
+}
+
+.radio span {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 3px solid rgb(13, 77, 216);
+    display: block;
+    position: absolute;
+    left: -23px;
+    top: 1.5px;
+}
+
+.radio span:after {
+    content: '';
+    height: 8px;
+    width: 8px;
+    background: rgb(13, 77, 216);
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -3%;
+    transform: translate(-50%, 50%) scale(0);
+    border-radius: 50%;
+    transition: 350ms ease-in-out 0s;
+}
+
+.radio input:checked ~ span:after {
+    transform: translate(-50%, 50%) scale(1);
+}
+
+.buttons input {
+    background-color: rgb(26, 112, 224);
+    border-radius: 8px;
+    color: white;
+    margin: auto;
+    display: flex;
+    margin-top: 1rem;
+    padding: 0.3rem;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.output p{
+    text-align: center;
+    margin-top: 0.6rem;
+    font-weight: 600;
+}
